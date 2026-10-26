@@ -9,7 +9,7 @@ Lire d'abord `<repo>/.claude/design-memory.md` si présent (réutiliser le conce
 
 ## Démarche
 1. Inspecter l'existant (stack, composants, tokens, contenu réel) et comprendre produit, cible, promesse. Ne rien supposer du code sans le lire.
-2. STANDARD : un concept court. DEEP / demande explicite : trois directions (A éditoriale, B expressive, C produit futuriste), chacune en 5 lignes + signature + risque, puis **une recommandation argumentée** (pas la plus complexe par défaut).
+2. Pour tout concept non trivial, déléguer la génération et le contrôle de distinctivité à `concept-lab` (ancrage produit, routes de divergence, score). STANDARD : un concept court. DEEP / demande explicite : trois directions (A éditoriale, B expressive, C produit futuriste), chacune en 5 lignes + signature + risque, puis **une recommandation argumentée** (pas la plus complexe par défaut).
 3. Décider où l'immersion (3D/shader/motion) apporte du sens et où la sobriété s'impose (`references/tech-decision.md`).
 4. Livrer la fiche concept (format dans `directions.md`) : vocabulaire graphique identifiable, palette, typo (`typography-layout.md`), règles de motion.
 5. DEEP : attendre la validation de l'utilisateur avant d'implémenter. Enregistrer la décision dans design-memory.

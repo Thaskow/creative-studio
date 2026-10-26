@@ -2,7 +2,7 @@
 
 > Transformez Claude Code en studio de création web : sites originaux, applications soignées, dashboards efficaces et expériences 3D, **sans que la créativité dégrade l'expérience**.
 
-15 Skills + 3 subagents prêts à installer. *(English summary at the bottom.)*
+16 Skills + 3 subagents prêts à installer. *(English summary at the bottom.)*
 
 ## ✨ Ce que ça fait
 
@@ -31,6 +31,22 @@ Windows PowerShell :
 Les scripts copient `skills/` dans `~/.claude/skills/` et `agents/` dans `~/.claude/agents/` (sans écraser sans demander). Relancez ensuite Claude Code. Pour un seul projet, copiez les dossiers dans `mon-projet/.claude/` à la place.
 
 **Vérifier :** tapez `/` dans Claude Code et cherchez `creative-studio`.
+
+## 🦄 Pour des résultats vraiment uniques
+
+`concept-lab` empêche le « look IA par défaut » :
+
+1. **Ancrage** dans le produit réel (objet, geste, matière, vocabulaire, tension).
+2. **3 concepts divergents** par des routes différentes (métaphore du domaine, contrainte forte, tension inversée, emprunt lointain, donnée comme matière).
+3. **Contrôle de distinctivité** : 8 critères notés /2, seuil 11/16, liste d'empreintes génériques à éviter (`anti-defaults.md`), test « page blanche ».
+4. **Interfaces sur demande** : pour une tâche, le paradigme d'interaction qu'elle appelle (canevas manipulable, timeline, superposition, file de triage clavier…) plutôt que formulaire + tableau.
+5. **Registre inter-projets** (`~/.claude/creative-studio-log.md`) : pas deux fois la même signature ou paire de polices.
+
+```text
+/concept-lab
+Site pour <produit>. Propose 3 concepts réellement différents, note-les,
+recommande-en un. Ne modifie aucun fichier.
+```
 
 ## 🧭 Démarrage rapide
 
@@ -66,6 +82,7 @@ La 3D et les effets expérimentaux sont **toujours optionnels**.
 | Skill | Rôle |
 |---|---|
 | `creative-studio` | Orchestrateur : modes et routage |
+| `concept-lab` | **Moteur d'unicité** : concepts divergents, score de distinctivité, interfaces sur mesure |
 | `creative-director` | Direction artistique, concepts A/B/C |
 | `design-inspiration` | Références (Awwwards, Godly, Codrops…), licences |
 | `creative-frontend` | Implémentation dans votre stack (Vue/Nuxt, React/Next…) |
@@ -213,6 +230,6 @@ Issues et PR bienvenues. Gardez les `SKILL.md` courts : le détail va dans `skil
 
 ## 🇬🇧 English summary
 
-Creative Studio adds 15 skills and 3 review subagents to Claude Code for building distinctive, performant, accessible web UIs: marketing/immersive sites (Three.js, shaders, GSAP), product/user spaces, and admin dashboards, with LIGHT/STANDARD/DEEP modes. Install with `./install.sh` (or `install.ps1`), restart Claude Code, then run `/creative-studio Mode STANDARD. <your request>`. Skills are written in French; Claude follows them regardless of your prompt language.
+Creative Studio adds 16 skills and 3 review subagents to Claude Code for building distinctive, performant, accessible web UIs: marketing/immersive sites (Three.js, shaders, GSAP), product/user spaces, and admin dashboards, with LIGHT/STANDARD/DEEP modes. Install with `./install.sh` (or `install.ps1`), restart Claude Code, then run `/creative-studio Mode STANDARD. <your request>`. Skills are written in French; Claude follows them regardless of your prompt language.
 
 > **Principe fondamental :** une interface exceptionnelle n'est pas celle qui utilise le plus d'effets, mais celle qui combine identité forte, interactions pertinentes et excellente expérience utilisateur.
